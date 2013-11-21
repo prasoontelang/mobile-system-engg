@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F25BB9F317DE8D9E00A9C8DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25BB9F217DE8D9E00A9C8DB /* UIKit.framework */; };
+		F25BB9F517DE8D9E00A9C8DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25BB9F417DE8D9E00A9C8DB /* Foundation.framework */; };
+		F25BB9F717DE8D9E00A9C8DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25BB9F617DE8D9E00A9C8DB /* CoreGraphics.framework */; };
+		F25BB9FD17DE8D9E00A9C8DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F25BB9FB17DE8D9E00A9C8DB /* InfoPlist.strings */; };
+		F25BB9FF17DE8D9E00A9C8DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F25BB9FE17DE8D9E00A9C8DB /* main.m */; };
+		F25BBA0317DE8D9E00A9C8DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F25BBA0217DE8D9E00A9C8DB /* AppDelegate.m */; };
+		F25BBA0617DE8D9E00A9C8DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F25BBA0517DE8D9E00A9C8DB /* ViewController.m */; };
+		F25BBA0917DE8D9E00A9C8DB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25BBA0717DE8D9E00A9C8DB /* ViewController.xib */; };
+		F25BBA1017DE8DB700A9C8DB /* person.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = F25BBA0F17DE8DB700A9C8DB /* person.sqlite3 */; };
+		F25BBA1317DE8E2300A9C8DB /* personInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F25BBA1217DE8E2300A9C8DB /* personInfo.m */; };
+		F25BBA1617DE902600A9C8DB /* personDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F25BBA1517DE902600A9C8DB /* personDatabase.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F25BB9EE17DE8D9E00A9C8DB /* persondb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = persondb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25BB9F217DE8D9E00A9C8DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F25BB9F417DE8D9E00A9C8DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F25BB9F617DE8D9E00A9C8DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F25BB9FA17DE8D9E00A9C8DB /* persondb-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "persondb-Info.plist"; sourceTree = "<group>"; };
+		F25BB9FC17DE8D9E00A9C8DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F25BB9FE17DE8D9E00A9C8DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F25BBA0017DE8D9E00A9C8DB /* persondb-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "persondb-Prefix.pch"; sourceTree = "<group>"; };
+		F25BBA0117DE8D9E00A9C8DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F25BBA0217DE8D9E00A9C8DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F25BBA0417DE8D9E00A9C8DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F25BBA0517DE8D9E00A9C8DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F25BBA0817DE8D9E00A9C8DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		F25BBA0F17DE8DB700A9C8DB /* person.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = person.sqlite3; path = ../../person.sqlite3; sourceTree = "<group>"; };
+		F25BBA1117DE8E2300A9C8DB /* personInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personInfo.h; sourceTree = "<group>"; };
+		F25BBA1217DE8E2300A9C8DB /* personInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personInfo.m; sourceTree = "<group>"; };
+		F25BBA1417DE902600A9C8DB /* personDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personDatabase.h; sourceTree = "<group>"; };
+		F25BBA1517DE902600A9C8DB /* personDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personDatabase.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F25BB9EB17DE8D9D00A9C8DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25BB9F317DE8D9E00A9C8DB /* UIKit.framework in Frameworks */,
+				F25BB9F517DE8D9E00A9C8DB /* Foundation.framework in Frameworks */,
+				F25BB9F717DE8D9E00A9C8DB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F25BB9E317DE8D9D00A9C8DB = {
+			isa = PBXGroup;
+			children = (
+				F25BB9F817DE8D9E00A9C8DB /* persondb */,
+				F25BB9F117DE8D9E00A9C8DB /* Frameworks */,
+				F25BB9EF17DE8D9E00A9C8DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F25BB9EF17DE8D9E00A9C8DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F25BB9EE17DE8D9E00A9C8DB /* persondb.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F25BB9F117DE8D9E00A9C8DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F25BB9F217DE8D9E00A9C8DB /* UIKit.framework */,
+				F25BB9F417DE8D9E00A9C8DB /* Foundation.framework */,
+				F25BB9F617DE8D9E00A9C8DB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F25BB9F817DE8D9E00A9C8DB /* persondb */ = {
+			isa = PBXGroup;
+			children = (
+				F25BBA0117DE8D9E00A9C8DB /* AppDelegate.h */,
+				F25BBA0217DE8D9E00A9C8DB /* AppDelegate.m */,
+				F25BBA0417DE8D9E00A9C8DB /* ViewController.h */,
+				F25BBA0517DE8D9E00A9C8DB /* ViewController.m */,
+				F25BBA0717DE8D9E00A9C8DB /* ViewController.xib */,
+				F25BB9F917DE8D9E00A9C8DB /* Supporting Files */,
+				F25BBA1117DE8E2300A9C8DB /* personInfo.h */,
+				F25BBA1217DE8E2300A9C8DB /* personInfo.m */,
+				F25BBA1417DE902600A9C8DB /* personDatabase.h */,
+				F25BBA1517DE902600A9C8DB /* personDatabase.m */,
+			);
+			path = persondb;
+			sourceTree = "<group>";
+		};
+		F25BB9F917DE8D9E00A9C8DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F25BBA0F17DE8DB700A9C8DB /* person.sqlite3 */,
+				F25BB9FA17DE8D9E00A9C8DB /* persondb-Info.plist */,
+				F25BB9FB17DE8D9E00A9C8DB /* InfoPlist.strings */,
+				F25BB9FE17DE8D9E00A9C8DB /* main.m */,
+				F25BBA0017DE8D9E00A9C8DB /* persondb-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F25BB9ED17DE8D9D00A9C8DB /* persondb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F25BBA0C17DE8D9E00A9C8DB /* Build configuration list for PBXNativeTarget "persondb" */;
+			buildPhases = (
+				F25BB9EA17DE8D9D00A9C8DB /* Sources */,
+				F25BB9EB17DE8D9D00A9C8DB /* Frameworks */,
+				F25BB9EC17DE8D9D00A9C8DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = persondb;
+			productName = persondb;
+			productReference = F25BB9EE17DE8D9E00A9C8DB /* persondb.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F25BB9E517DE8D9D00A9C8DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Education;
+			};
+			buildConfigurationList = F25BB9E817DE8D9D00A9C8DB /* Build configuration list for PBXProject "persondb" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F25BB9E317DE8D9D00A9C8DB;
+			productRefGroup = F25BB9EF17DE8D9E00A9C8DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F25BB9ED17DE8D9D00A9C8DB /* persondb */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F25BB9EC17DE8D9D00A9C8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25BB9FD17DE8D9E00A9C8DB /* InfoPlist.strings in Resources */,
+				F25BBA0917DE8D9E00A9C8DB /* ViewController.xib in Resources */,
+				F25BBA1017DE8DB700A9C8DB /* person.sqlite3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F25BB9EA17DE8D9D00A9C8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25BB9FF17DE8D9E00A9C8DB /* main.m in Sources */,
+				F25BBA0317DE8D9E00A9C8DB /* AppDelegate.m in Sources */,
+				F25BBA0617DE8D9E00A9C8DB /* ViewController.m in Sources */,
+				F25BBA1317DE8E2300A9C8DB /* personInfo.m in Sources */,
+				F25BBA1617DE902600A9C8DB /* personDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F25BB9FB17DE8D9E00A9C8DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F25BB9FC17DE8D9E00A9C8DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F25BBA0717DE8D9E00A9C8DB /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F25BBA0817DE8D9E00A9C8DB /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F25BBA0A17DE8D9E00A9C8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F25BBA0B17DE8D9E00A9C8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F25BBA0D17DE8D9E00A9C8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "persondb/persondb-Prefix.pch";
+				INFOPLIST_FILE = "persondb/persondb-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F25BBA0E17DE8D9E00A9C8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "persondb/persondb-Prefix.pch";
+				INFOPLIST_FILE = "persondb/persondb-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F25BB9E817DE8D9D00A9C8DB /* Build configuration list for PBXProject "persondb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25BBA0A17DE8D9E00A9C8DB /* Debug */,
+				F25BBA0B17DE8D9E00A9C8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F25BBA0C17DE8D9E00A9C8DB /* Build configuration list for PBXNativeTarget "persondb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25BBA0D17DE8D9E00A9C8DB /* Debug */,
+				F25BBA0E17DE8D9E00A9C8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F25BB9E517DE8D9D00A9C8DB /* Project object */;
+}
