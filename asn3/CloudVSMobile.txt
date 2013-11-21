@@ -1,0 +1,47 @@
+Problem 2:
+==========
+Differentiate between mobile and cloud computing.
+
+a.
+Mobile computing has limited processing power.
+
+Cloud compusing provides higher processing power due to usage of high
+end servers on the cloud.
+_____________________________________________________________________
+
+b.
+Mobile computing is constrained by Battery Power
+
+Cloud computing is not constrained by power limitation as there is a
+continuous supply of power.
+_____________________________________________________________________
+
+c.
+Mobile computing is a physical computing device that can be used
+continuously making it convenient to carry around. Laptop, mobile
+phone, tablets are some small sized computing devices which allow you
+to work on the move. The data is stored in a device you carry.
+
+In cloud computing, your files are stored in a central cloud server
+and any system across the globe with an internet connection can access
+the files and folders. The data is stored in the server and is shared 
+over the web using internet.
+_____________________________________________________________________
+
+d.
+Changes, modifications, upgrades made in mobile are limited to your 
+local physical storage in mobile computing.
+
+Changes, modifications, upgrades made on cloud are reflected on each
+and every device that tries to access it in cloud computing.
+_____________________________________________________________________
+
+e.
+In mobile computing, different devices have different architectures.
+Hence, applications will have to be built separately to be made
+compatible with the targeted devices.
+
+In cloud computing, applications developed on cloud will be independent
+of the architecture of the devices that are accessing it. Hence, 
+one common development will suffice the performance on across the
+different platforms that are accessing the cloud server.

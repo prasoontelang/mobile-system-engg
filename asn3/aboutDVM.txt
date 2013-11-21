@@ -1,0 +1,168 @@
+Problem 1:
+==========
+
+Explore the DVM instructions and prepare a summary of the same at least for 5 instructions in a detailed format
+i) Instruction name
+ii) Syntax
+iii) Example
+____________________________________________________________________________________
+
+INSTRUCTION 1
+move-wide
+=========
+    Purpose:
+        Move the contents of one register-pair to another
+    
+    Syntax with description: 
+        move-wide/from16 vAA, vBBBB
+        op code = 02 22x
+    
+        "move" is the base opcode, indicating the base operation (move a register's value).
+
+        "wide" is the name suffix, indicating that it operates on wide (64 bit) data.
+
+        "from16" is the opcode suffix, indicating a variant that has a 16-bit register reference as a source.
+
+        "vAA" is the destination register, which must be in the range v0 – v255.
+
+        "vBBBB" is the source register, which must be in the range v0 – v65535.
+
+        Example:  move-wide/from16 v13, v4444
+
+            This instruction will move the contents of register v4444 to register v13.
+            Note that the source register v4444 is a 16 bit register reference.
+____________________________________________________________________________________
+
+INSTRUCTION 2
+if
+==
+    Purpose:
+        Branch to the given destination if the given two registers' values compare as specified
+
+    Syntax with description: 
+        if-test vA, vB, +CCCC
+        op code = 32..37 22t
+    
+        "if" is the base opcode, indicating the base operation 
+
+        "test" specifies that the comparison operator. The permissible values are
+        32: if-eq
+        33: if-ne
+        34: if-lt
+        35: if-ge
+        36: if-gt
+        37: if-le
+
+        "vA" is the first register to test (4 bits)
+        "B" is the second register to test (4 bits)
+        "+CCCC" is the signed branch offset (16 bits)
+
+    Example:  
+        if-32 v2,v3,+1234
+    
+        This instruction will transfer control to the instruction at  +1234 if the
+        values present in v2 and v3 are equal.
+____________________________________________________________________________________
+
+INSTRUCTION 3
+goto
+====
+    Purpose:
+        Unconditionally jump to the indicated instruction.
+        
+        Syntax with description: 
+            goto +AA
+            op code = 28 10t
+
+        "goto" is the base opcode, indicating the base operation 
+
+        "+AA" specifies  signed branch offset (8 bits)
+
+        Note: The branch offset must not be 0.
+
+    Example:  goto +23
+        This instruction will transfer control to the instruction at +23
+
+    Modification over this instruction:
+        For specifying 16 bit signed branch offset use the following instruction:
+            goto/16 +AAAA
+            op code = 29 20t
+    Example:  goto/16 +9999
+        This instruction will transfer control to the instruction at +9999
+
+    Modification over this instruction:
+        For specifying 32 bit signed branch offset use the following instruction:
+            goto/32 +AAAAAAAA
+            op code = 2a 30t
+    Example:  goto/32 +99991234
+        This instruction will transfer control to the instruction at +99991234
+____________________________________________________________________________________
+
+INSTRUCTION 4
+const
+=====
+    Purpose:
+        Move the given literal value into the specified register
+
+    Syntax with description: 
+        const/4 vA, #+B
+        op code = 12 11n
+
+        "const" is the base opcode, indicating the base operation 
+
+        "/4" specifies that the value of B is 4 bits 
+
+        "vA" is the destination register (4 bits)
+
+        "B" is the signed int (4 bits)
+
+    Example:  const/4 v3, #+9
+        This instruction will move +9 signed int to the register v3
+
+        Modification over this instruction:
+        For specifying 16 bit signed int value use the following instruction:
+            const/16 vAA, #+BBBB
+            op code = 13 21s
+    Example:  const/16 v13, #+9999
+
+    This instruction will move +9999 signed int to the register v13
+____________________________________________________________________________________
+
+INSTRUCTION 5
+return
+======
+    Purpose:
+        Return from a method
+    
+    Syntax with description: 
+        return-void
+        op code = 0e 10x
+    
+    "goto" is the base opcode, indicating the base operation 
+                      Example:  return-void
+    
+    Modification over this instruction:
+        For specifying return from a single-width (32-bit) non-object value-returning method use the following instruction:
+            return vAA
+            op code = 0f 11x
+
+    Example:  return v13
+        This instruction specifies a return from an 8 bit return value register – v13
+
+    Modification over this instruction:
+        For specifying return from a single-width (64-bit) value-returning method use the following instruction:
+            return-wide vAA
+            op code = 10 11x
+
+    Example:  return-wide v13
+        This instruction specifies a return from an 8 bit return value register pair – v13
+
+    Modification over this instruction:
+        For specifying return from an object returning method use the following instruction:
+            return-object vAA
+            op code = 11 11x
+    Example:  return-object v13
+        This instruction specifies a return from an 8 bit return value register – v13
+____________________________________________________________________________________
+
+End

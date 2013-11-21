@@ -1,0 +1,31 @@
+Problem 3:
+==========
+Give an example of an application simulating an environment of context aware
+computing and justify.
+
+->
+Context awareness is a term that describes the ability of the computer to
+sense and act upon information about its environment, such as location, time
+or user identity. This information can be used not only to tag information
+as it is collected in the field, but also to enable selective responses such
+as triggering alarms or retrieving information relevant to the task at hand. 
+
+Automatic light as Context-Aware System
+---------------------------------------
+At house entrances and in hotel hallways automatic lights have become common.
+These systems can also be seen as simple context-aware systems. The
+contextual parameters taken into account are the current light conditions
+and if there is motion in the vicinity. The adaptation mechanism is fairly
+simple. If the situation detected is that it is dark and that there is
+someone moving, the light will be switched on. The light will then be on as
+long as the person moves, and after a period where no motion is detected,
+the light will switch off again. Similarly, the light will switch off if it
+is not dark anymore.
+
+Context-Aware System in mobile systems
+--------------------------------------
+A tablet computer switching the orientation of the screen, maps orienting
+themselves with the user’s current orientation and adapting the zoom level
+to the current speed, and switching on the backlight of the phone when used
+in the dark are examples of computers that are aware of their environment
+and their context of use.
